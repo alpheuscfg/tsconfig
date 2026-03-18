@@ -8,6 +8,10 @@
     - remove `downlevelIteration`
 - switch target to `esnext` in `tsconfig.lib.json`
 
+### What's Changed
+
+- update package metadata
+
 ## 0.1.3 (2025-05-28)
 
 ### What's Changed
