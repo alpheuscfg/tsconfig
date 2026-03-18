@@ -1,0 +1,45 @@
+{
+    "name": "@apst/tsconfig",
+    "version": "0.1.3",
+    "description": "A shareable TypeScript configuration",
+    "keywords": [
+        "tsconfig",
+        "configuration",
+        "config",
+        "ts",
+        "typescript",
+        "js",
+        "javascript"
+    ],
+    "homepage": "https://github.com/alpheuscfg/tsconfig",
+    "bugs": "https://github.com/alpheuscfg/tsconfig/issues",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/alpheuscfg/tsconfig.git",
+        "directory": "package"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Alpheus",
+        "email": "contact@alphe.us"
+    },
+    "type": "module",
+    "exports": {
+        ".": "./tsconfig.json",
+        "./lib": "./tsconfig.lib.json",
+        "./package.json": "./package.json"
+    },
+    "main": "./tsconfig.json",
+    "files": [
+        "tsconfig.json",
+        "tsconfig.lib.json"
+    ],
+    "peerDependencies": {
+        "typescript": "^5.0.0 || ^6.0.0"
+    },
+    "peerDependenciesMeta": {
+        "typescript": {
+            "optional": true
+        }
+    }
+}

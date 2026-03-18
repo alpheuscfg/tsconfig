@@ -1,0 +1,7 @@
+{
+    "private": true,
+    "devDependencies": {
+        "@apst/biome": "~0.3.0",
+        "@biomejs/biome": "^2.4.7"
+    }
+}
