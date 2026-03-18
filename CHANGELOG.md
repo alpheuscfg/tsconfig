@@ -1,6 +1,6 @@
 [< Back](./README.md)
 
-## 0.2.1
+## 0.2.1 (2026-03-18)
 
 ### Breaking Changes
 
