@@ -1,12 +1,14 @@
 [< Back](./README.md)
 
-## 0.2.0 (2026-03-18)
+## 0.2.1
 
 ### Breaking Changes
 
-- add support for TypeScript 6:
-    - remove `downlevelIteration`
 - switch target to `esnext` in `tsconfig.lib.json`
+
+### What's New
+
+- add support for TypeScript 6
 
 ### What's Changed
 

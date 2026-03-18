@@ -1,6 +1,6 @@
 {
     "name": "@apst/tsconfig",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "description": "A shareable TypeScript configuration",
     "keywords": [
         "tsconfig",
@@ -25,14 +25,17 @@
     },
     "type": "module",
     "exports": {
-        ".": "./tsconfig.json",
-        "./lib": "./tsconfig.lib.json",
+        ".": "./ts/5/tsconfig.json",
+        "./lib": "./ts/5/tsconfig.lib.json",
+        "./5": "./ts/5/tsconfig.json",
+        "./5/lib": "./ts/5/tsconfig.lib.json",
+        "./6": "./ts/6/tsconfig.json",
+        "./6/lib": "./ts/6/tsconfig.lib.json",
         "./package.json": "./package.json"
     },
     "main": "./tsconfig.json",
     "files": [
-        "tsconfig.json",
-        "tsconfig.lib.json"
+        "ts"
     ],
     "peerDependencies": {
         "typescript": "^5.0.0 || ^6.0.0"
