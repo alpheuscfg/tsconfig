@@ -7,21 +7,37 @@ publish := "pnpm publish --access public"
 
 # Default action
 _:
-    just fmt
-    just lint
+    just --list -u
 
 # Install
 i:
     pnpm install
 
-# Lint code
-lint:
-    ls-lint -config ./.ls-lint.yaml
-    typos
-
 # Format code
 fmt:
     {{biome}} check --write .
+
+# Lint code with ls-lint
+ls-lint:
+    ls-lint -config ./.ls-lint.yaml
+
+# Lint code with ls-lint
+lslint:
+    just ls-lint
+
+# Lint code with typos-cli
+typos:
+    typos
+
+# Lint code
+lint:
+    just lslint
+    just typos
+
+# Check code
+check:
+    just fmt
+    just lint
 
 # Publish as dry-run
 publish-try:
