@@ -1,5 +1,31 @@
 [< Back](./README.md)
 
+## 0.3.0
+
+### Breaking Changes
+
+- map default paths (`@apst/tsconfig`, `@apst/tsconfig/lib`) to TypeScript 6 configuration
+
+### TypeScript 5 Support
+
+For TypeScript 5 support, please update the configuration:
+
+```diff
+{
+-   "extends": "@apst/tsconfig"
++   "extends": "@apst/tsconfig/5"
+}
+```
+
+Or for library:
+
+```diff
+{
+-   "extends": "@apst/tsconfig/lib"
++   "extends": "@apst/tsconfig/5/lib"
+}
+```
+
 ## 0.2.1 (2026-03-18)
 
 ### Breaking Changes
