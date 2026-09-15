@@ -22,22 +22,17 @@ ls-lint:
     ls-lint -config ./.ls-lint.yaml
 
 # Lint code with ls-lint
-lslint:
-    just ls-lint
+lslint: ls-lint
 
 # Lint code with typos-cli
 typos:
     typos
 
 # Lint code
-lint:
-    just lslint
-    just typos
+lint: lslint typos
 
 # Check code
-check:
-    just fmt
-    just lint
+check: fmt lint
 
 # Publish as dry-run
 publish-try:
@@ -52,8 +47,7 @@ clean-all-linux:
     rm -rf ./node_modules
 
 # Clean everything (macOS)
-clean-all-macos:
-    just clean-all-linux
+clean-all-macos: clean-all-linux
 
 # Clean everything (Windows)
 clean-all-windows:
