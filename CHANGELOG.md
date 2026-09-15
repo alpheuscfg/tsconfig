@@ -1,5 +1,11 @@
 [< Back](./README.md)
 
+## Next
+
+### What's New
+
+- add support for TypeScript 7
+
 ## 0.3.0 (2026-03-23)
 
 ### Breaking Changes
